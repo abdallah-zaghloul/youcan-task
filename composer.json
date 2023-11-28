@@ -20,7 +20,8 @@
         "league/fractal": "^0.20.1",
         "livewire/livewire": "^3.1",
         "nwidart/laravel-modules": "^10.0",
-        "prettus/l5-repository": "^2.9"
+        "prettus/l5-repository": "^2.9",
+        "zaghloul-soft/persona-module": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
