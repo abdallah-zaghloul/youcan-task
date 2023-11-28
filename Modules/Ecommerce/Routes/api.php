@@ -17,3 +17,5 @@ use Modules\Ecommerce\Http\Controllers\Api\ProductsController;
 
 //global module prefix api/ecommerce applied at RouteServiceProvider
 
+Route::get('products', [ProductsController::class, 'index'])->name('products.index');
+Route::post('products', [ProductsController::class, 'create'])->name('products.create');
