@@ -18,3 +18,12 @@ use Modules\Ecommerce\Http\Controllers\Web\ProductsController;
 //global module prefix ecommerce applied at RouteServiceProvider
 
 Route::get('/', EcommerceController::class)->name('index')->middleware('auth:web,adminWeb');
+
+Route::group([
+    'middleware' => 'auth:web,adminWeb',
+    'prefix' => 'products',
+    'as' => 'products.',
+], function () {
+    Route::get('create', [ProductsController::class, 'create'])->name('create');
+    Route::post('/', [ProductsController::class, 'store'])->name('store');
+});
