@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Modules\Ecommerce\Console\CreateProductCommand;
 
 /**
  *
@@ -99,9 +100,9 @@ class EcommerceServiceProvider extends ServiceProvider
      */
     protected function registerCommands(): void
     {
-//         $this->commands([
-//
-//         ]);
+         $this->commands([
+             CreateProductCommand::class
+         ]);
     }
 
     /**
