@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Persona\Providers;
+namespace Modules\Ecommerce\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -11,80 +11,55 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     *
-     */
-    public const USER_HOME = 'ecommerce';
-    public const ADMIN_HOME = 'ecommerce';
-
-
-    /**
      * The module namespace to assume when generating URLs to actions.
-     *
-     * @var string
      */
-    protected $moduleNamespace = 'Modules\Persona\Http\Controllers';
-
+    protected string $moduleNamespace = 'Modules\Ecommerce\Http\Controllers';
 
     /**
      * Called before routes are registered.
      *
      * Register any model bindings or pattern based filters.
-     *
-     * @return void
      */
-
-
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
     }
 
-
     /**
      * Define the routes for the application.
-     *
-     * @return void
      */
-    public function map()
+    public function map(): void
     {
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
     }
 
-
     /**
      * Define the "web" routes for the application.
      *
      * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
      */
-    protected function mapWebRoutes()
+    protected function mapWebRoutes(): void
     {
-        Route::middleware('web')
+        Route::middleware(['web','log'])
+            ->prefix('ecommerce')
+            ->as('ecommerce.')
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Persona', '/Routes/web.php'));
-
-        Route::middleware('web')
-            ->prefix('admin')
-            ->namespace($this->moduleNamespace)
-            ->group(module_path('Persona', '/Routes/adminWeb.php'));
+            ->group(module_path('Ecommerce', '/Routes/web.php'));
     }
-
 
     /**
      * Define the "api" routes for the application.
      *
      * These routes are typically stateless.
-     *
-     * @return void
      */
-    protected function mapApiRoutes()
+    protected function mapApiRoutes(): void
     {
-        Route::prefix('api')
-            ->middleware('api')
+        Route::prefix('api/ecommerce')
+            ->as('ecommerce.api.')
+            ->middleware(['api','log'])
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Persona', '/Routes/api.php'));
+            ->group(module_path('Ecommerce', '/Routes/api.php'));
     }
 }
