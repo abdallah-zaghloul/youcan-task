@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7fa8306249975efe0211029bbb3c7fd",
+    "content-hash": "bd0a2d0ccff52ae309adcbba54cb15e6",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -6363,6 +6363,61 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "zaghloul-soft/persona-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abdallah-zaghloul/persona-module.git",
+                "reference": "603624dc07211307ba74146e840c3912c775b083"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abdallah-zaghloul/persona-module/zipball/603624dc07211307ba74146e840c3912c775b083",
+                "reference": "603624dc07211307ba74146e840c3912c775b083",
+                "shasum": ""
+            },
+            "require": {
+                "joshbrw/laravel-module-installer": "^2.0",
+                "laravel/ui": "^4.2",
+                "livewire/livewire": "^3.1",
+                "nwidart/laravel-modules": "^10.0",
+                "prettus/l5-repository": "^2.9"
+            },
+            "require-dev": {
+                "mhmiton/laravel-modules-livewire": "^2.1"
+            },
+            "default-branch": true,
+            "type": "laravel-module",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nwidart\\Modules\\LaravelModulesServiceProvider",
+                        "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
+                    ],
+                    "aliases": []
+                },
+                "module-dir": "Modules"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Persona\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Abdallah Zaghloul",
+                    "email": "3bdallahzaghloul@gmail.com"
+                }
+            ],
+            "description": "Persona Decoupled Module HMVC Repository Based",
+            "support": {
+                "issues": "https://github.com/abdallah-zaghloul/persona-module/issues",
+                "source": "https://github.com/abdallah-zaghloul/persona-module/tree/master"
+            },
+            "time": "2023-11-23T16:39:10+00:00"
         }
     ],
     "packages-dev": [
@@ -8870,7 +8925,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "zaghloul-soft/persona-module": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
