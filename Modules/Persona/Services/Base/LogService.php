@@ -43,7 +43,7 @@ class LogService
         ];
 
         $requestData = collect(compact('headers', 'body', 'query', 'cookie', 'ip', 'guard', 'id'));
-        $responseData = collect(@$response->original ?? @$response['original'] ?? []);
+        $responseData = collect(@$response->original);
 
         if (env('APP_ENV') !== 'production')
             [$requestData, $responseData] = [
