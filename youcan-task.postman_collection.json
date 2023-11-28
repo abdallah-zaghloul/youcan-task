@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "442a3229-d3c4-44e5-9ce9-88eb63b2996b",
+		"name": "Youcan-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12703363"
+	},
+	"item": [
+		{
+			"name": "IndexProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ecommerce/products?categoryName=aut&sortBy=price&dir=asc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ecommerce",
+						"products"
+					],
+					"query": [
+						{
+							"key": "categoryName",
+							"value": "aut"
+						},
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "dir",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ecommerce/products?categoryName=aut&sortBy=price&dir=asc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ecommerce",
+								"products"
+							],
+							"query": [
+								{
+									"key": "categoryName",
+									"value": "aut"
+								},
+								{
+									"key": "sortBy",
+									"value": "price"
+								},
+								{
+									"key": "dir",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 06:45:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Successful operation.\",\n    \"data\": {\n        \"products\": {\n            \"data\": [\n                {\n                    \"id\": 343406,\n                    \"name\": \"Tenetur et deserunt.\",\n                    \"description\": \"Eius voluptatem nihil porro expedita.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:41\",\n                    \"updated_at\": \"2023-11-28 05:18:41\",\n                    \"categories\": [\n                        {\n                            \"id\": 210,\n                            \"name\": \"Voluptas aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 412012,\n                    \"name\": \"Perspiciatis perferendis nulla.\",\n                    \"description\": \"Illum iure sint amet.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:51\",\n                    \"updated_at\": \"2023-11-28 05:18:51\",\n                    \"categories\": [\n                        {\n                            \"id\": 962,\n                            \"name\": \"Iusto aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 153128,\n                    \"name\": \"Tempore nemo consequatur.\",\n                    \"description\": \"Numquam at voluptatem ut rerum.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:14\",\n                    \"updated_at\": \"2023-11-28 05:18:14\",\n                    \"categories\": [\n                        {\n                            \"id\": 809,\n                            \"name\": \"Expedita aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 206696,\n                    \"name\": \"Deserunt voluptatem sit.\",\n                    \"description\": \"Officiis explicabo facilis.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:22\",\n                    \"updated_at\": \"2023-11-28 05:18:22\",\n                    \"categories\": [\n                        {\n                            \"id\": 667,\n                            \"name\": \"Eum aut quae.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 253818,\n                    \"name\": \"In totam sit.\",\n                    \"description\": \"Aut quia fugiat deleniti.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:28\",\n                    \"updated_at\": \"2023-11-28 05:18:28\",\n                    \"categories\": [\n                        {\n                            \"id\": 70,\n                            \"name\": \"Aut et incidunt.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 273267,\n                    \"name\": \"Quaerat itaque beatae.\",\n                    \"description\": \"Autem cum cupiditate molestias.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:31\",\n                    \"updated_at\": \"2023-11-28 05:18:31\",\n                    \"categories\": [\n                        {\n                            \"id\": 962,\n                            \"name\": \"Iusto aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 259054,\n                    \"name\": \"Reprehenderit sequi similique.\",\n                    \"description\": \"Magnam eveniet repellat sed.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:29\",\n                    \"updated_at\": \"2023-11-28 05:18:29\",\n                    \"categories\": [\n                        {\n                            \"id\": 370,\n                            \"name\": \"Aut excepturi eum.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 49051,\n                    \"name\": \"Sed ex excepturi.\",\n                    \"description\": \"Odio enim non voluptatem.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:03\",\n                    \"updated_at\": \"2023-11-28 05:18:03\",\n                    \"categories\": [\n                        {\n                            \"id\": 714,\n                            \"name\": \"Reiciendis aut veniam.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 83164,\n                    \"name\": \"Optio aut eum.\",\n                    \"description\": \"Voluptatem beatae neque optio quod.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:06\",\n                    \"updated_at\": \"2023-11-28 05:18:06\",\n                    \"categories\": [\n                        {\n                            \"id\": 129,\n                            \"name\": \"Sunt et aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 443884,\n                    \"name\": \"Quo iure delectus.\",\n                    \"description\": \"Quisquam hic quas saepe.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:55\",\n                    \"updated_at\": \"2023-11-28 05:18:55\",\n                    \"categories\": [\n                        {\n                            \"id\": 8,\n                            \"name\": \"Autem architecto.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 28555,\n                    \"name\": \"Laboriosam consectetur et.\",\n                    \"description\": \"Dolor voluptas perferendis aperiam.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:01\",\n                    \"updated_at\": \"2023-11-28 05:18:01\",\n                    \"categories\": [\n                        {\n                            \"id\": 377,\n                            \"name\": \"Est aut necessitatibus.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 379660,\n                    \"name\": \"Quia est iste.\",\n                    \"description\": \"Provident vero harum omnis.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:46\",\n                    \"updated_at\": \"2023-11-28 05:18:46\",\n                    \"categories\": [\n                        {\n                            \"id\": 70,\n                            \"name\": \"Aut et incidunt.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 88680,\n                    \"name\": \"Quaerat nam nisi.\",\n                    \"description\": \"Alias magnam minus quas sit.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:07\",\n                    \"updated_at\": \"2023-11-28 05:18:07\",\n                    \"categories\": [\n                        {\n                            \"id\": 128,\n                            \"name\": \"Deserunt autem.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 273701,\n                    \"name\": \"Est ratione distinctio.\",\n                    \"description\": \"Voluptas qui quae odio.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:31\",\n                    \"updated_at\": \"2023-11-28 05:18:31\",\n                    \"categories\": [\n                        {\n                            \"id\": 370,\n                            \"name\": \"Aut excepturi eum.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 304464,\n                    \"name\": \"Aut facere deserunt.\",\n                    \"description\": \"Sunt sequi temporibus aperiam aut.\",\n                    \"price\": \"10.00\",\n                    \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/no-product-image.png\",\n                    \"created_at\": \"2023-11-28 05:18:35\",\n                    \"updated_at\": \"2023-11-28 05:18:35\",\n                    \"categories\": [\n                        {\n                            \"id\": 864,\n                            \"name\": \"Architecto sint aut.\",\n                            \"parent_id\": null,\n                            \"created_at\": \"2023-11-28 05:17:58\",\n                            \"updated_at\": \"2023-11-28 05:17:58\"\n                        }\n                    ]\n                }\n            ],\n            \"path\": \"http://127.0.0.1:8000/api/ecommerce/products\",\n            \"per_page\": 15,\n            \"next_cursor\": \"eyJwcmljZSI6IjEwLjAwIiwiX3BvaW50c1RvTmV4dEl0ZW1zIjp0cnVlfQ\",\n            \"next_page_url\": \"http://127.0.0.1:8000/api/ecommerce/products?categoryName=aut&sortBy=price&dir=asc&cursor=eyJwcmljZSI6IjEwLjAwIiwiX3BvaW50c1RvTmV4dEl0ZW1zIjp0cnVlfQ\",\n            \"prev_cursor\": null,\n            \"prev_page_url\": null\n        }\n    }\n}"
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ecommerce/products?categoryName=aut&sortBy=price&dir=ascddd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ecommerce",
+								"products"
+							],
+							"query": [
+								{
+									"key": "categoryName",
+									"value": "aut"
+								},
+								{
+									"key": "sortBy",
+									"value": "price"
+								},
+								{
+									"key": "dir",
+									"value": "ascddd"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 06:46:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Please insert a valid data.\",\n    \"errors\": [\n        \"The selected dir is invalid.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Iphone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/run/user/1000/doc/9012b9e/2147780.png"
+						},
+						{
+							"key": "category_ids[]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category_ids[]",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ecommerce/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ecommerce",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "nokia",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/run/user/1000/doc/9012b9e/2147780.png"
+								},
+								{
+									"key": "category_ids[]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_ids[]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ecommerce/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ecommerce",
+								"products"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 06:46:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Please insert a valid data.\",\n    \"errors\": [\n        \"The name has already been taken.\"\n    ]\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Iphone",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/run/user/1000/doc/9012b9e/2147780.png"
+								},
+								{
+									"key": "category_ids[]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_ids[]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ecommerce/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ecommerce",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 06:46:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Successful operation.\",\n    \"data\": {\n        \"product\": {\n            \"id\": 530006,\n            \"name\": \"Iphone\",\n            \"description\": null,\n            \"price\": \"60.00\",\n            \"image\": \"https://large-file-upload-laravel.s3.eu-central-1.amazonaws.com/ecommerce/products/9ab81415-6b6b-4b27-9768-13bcf551735f.png\",\n            \"created_at\": \"2023-11-28 06:46:55\",\n            \"updated_at\": \"2023-11-28 06:46:55\",\n            \"categories\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Numquam perferendis iste.\",\n                    \"parent_id\": null,\n                    \"created_at\": \"2023-11-28 05:17:58\",\n                    \"updated_at\": \"2023-11-28 05:17:58\"\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"Iusto inventore fuga.\",\n                    \"parent_id\": null,\n                    \"created_at\": \"2023-11-28 05:17:58\",\n                    \"updated_at\": \"2023-11-28 05:17:58\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
