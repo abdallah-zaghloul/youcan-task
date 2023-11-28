@@ -13,50 +13,45 @@
     HMVC Modules (you can turn on/off each module and republish/reuse it at another project)
 
 <li> Module Structure (Repository Design Pattern)
-<p>
+
 <a target="_blank" href="https://drive.google.com/uc?export=view&id=1_CTRCCiZ0X4nG06_xTv48y6MH5vBb1gx">
 <img src="https://drive.google.com/uc?export=view&id=1_CTRCCiZ0X4nG06_xTv48y6MH5vBb1gx">
 </a>
+<br>
 
 <a target="_blank" href="https://drive.google.com/uc?export=view&id=1i5GrA99gv-EgFIl8Q7V_pherpfaC0w7C">
 <img src="https://drive.google.com/uc?export=view&id=1i5GrA99gv-EgFIl8Q7V_pherpfaC0w7C">
 </a>
+<br>
 
 <a target="_blank" href="https://drive.google.com/uc?export=view&id=1lLqYkY5bAtxVBJXeJ-JNk_IJlCksKo_L">
 <img src="https://drive.google.com/uc?export=view&id=1lLqYkY5bAtxVBJXeJ-JNk_IJlCksKo_L">
 </a>
-
-</p>
+<br>
 
 <li> Separated/Attached Tests
-
-<a target="_blank" href="https://drive.google.com/uc?export=view&id=1JndAIwZWf6RPAaVvOGxY2kdMtNRSLS36">
-<img src="https://drive.google.com/uc?export=view&id=1JndAIwZWf6RPAaVvOGxY2kdMtNRSLS36">
-</a>
-
 </ul>
 
 <h2>Solution Implementation</h2>
+<br>
+
 <pre>
 • Persona Module (Authentication & Authorization) :
-reusable module called zaghloul-soft/persona-module 
-the user,admin module separated from the app
-also default middlewares overrided this gives you the
-following benefits :
-
+ reusable module called zaghloul-soft/persona-module 
+ the user,admin module separated from the app
+ also default middlewares overrided this gives you the
+ following benefits :
 - ability to insert a new module like (Food Delivery)
 - utilize your admin,user data again at any project
 - separate it to a microservice in case of high traffic.
 -------------------------------------------------------
-
 • Ecommerce Module (Core Module) : reusable module
-both modules now you can require it through composer
-at any project.
+  both modules now you can require it through composer
+  at any project.
 -------------------------------------------------------
 • ERD :
 - Product (M) => <= (M) Category 
 - Category (O) => (M) Category  [self relation]
-
 -------------------------------------------------------
 • Optimize DB :
 - index for searchable columns
@@ -65,7 +60,6 @@ at any project.
 - Eager Loading
 - Generators to yield data (cursorPagination)
 - DB transactions in case of multiple table insertion
-
 -------------------------------------------------------
 • Seed : using Queues with ability to use Bus Batches
 -------------------------------------------------------
@@ -98,9 +92,7 @@ at any project.
 <pre>
 sail php artisan create:product {name}  {price} {--description="mobile phone"} {--category_ids=1,2}
 </pre>
-
-
-
+<br>
 
 <h3>How To Run The Project Locally</h3>
 <pre>
