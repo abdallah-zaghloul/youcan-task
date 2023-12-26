@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<h1>Project Title</h1>
+<h1>Youcan Task</h1>
 
 <h2>Live Demo</h2>
 <strong>Please watch this video 👇</strong>
@@ -115,9 +115,6 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 <li>Generate .env file from .env.decrypted:
 php artisan env:decrypt --key=base64:2xrR+5fd4VR6vgogEwkApSj9LBsVafhyafO1XCoumYo= --force
-
-<li>Laravel Sail install
-php artisan sail:install
 
 <li>Run Your local server up:
 sail up -d
