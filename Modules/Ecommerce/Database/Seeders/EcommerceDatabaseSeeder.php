@@ -21,7 +21,7 @@ class EcommerceDatabaseSeeder extends Seeder
      * Run the database seeds.
      * @throws Throwable
      */
-    public function run(?int $batches = 1000, ?int $records = 10000, ?int $categoryRecords = 1000, ?CategoryRepository $categoryRepository = null): void
+    public function run(?int $batches = 100, ?int $records = 10000, ?int $categoryRecords = 1000, ?CategoryRepository $categoryRepository = null): void
     {
         Model::unguard();
         $categoryRepository ??= app(CategoryRepository::class);
